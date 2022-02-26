@@ -14,6 +14,9 @@
 		AAD6645527C8FC27003AE2CD /* SwiftUI_Login_ScreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD6645427C8FC27003AE2CD /* SwiftUI_Login_ScreenTests.swift */; };
 		AAD6645F27C8FC27003AE2CD /* SwiftUI_Login_ScreenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD6645E27C8FC27003AE2CD /* SwiftUI_Login_ScreenUITests.swift */; };
 		AAD6646127C8FC27003AE2CD /* SwiftUI_Login_ScreenUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD6646027C8FC27003AE2CD /* SwiftUI_Login_ScreenUITestsLaunchTests.swift */; };
+		AAD6646F27CA33B1003AE2CD /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = AAD6646E27CA33B1003AE2CD /* Lottie */; };
+		AAD6647127CA3FFD003AE2CD /* LottieLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD6647027CA3FFD003AE2CD /* LottieLoginView.swift */; };
+		AAD6647727CA4CDC003AE2CD /* 93385-login.json in Resources */ = {isa = PBXBuildFile; fileRef = AAD6647627CA4CDC003AE2CD /* 93385-login.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,8 @@
 		AAD6645A27C8FC27003AE2CD /* SwiftUI-Login-ScreenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI-Login-ScreenUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAD6645E27C8FC27003AE2CD /* SwiftUI_Login_ScreenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Login_ScreenUITests.swift; sourceTree = "<group>"; };
 		AAD6646027C8FC27003AE2CD /* SwiftUI_Login_ScreenUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Login_ScreenUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AAD6647027CA3FFD003AE2CD /* LottieLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieLoginView.swift; sourceTree = "<group>"; };
+		AAD6647627CA4CDC003AE2CD /* 93385-login.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "93385-login.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAD6646F27CA33B1003AE2CD /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,7 +102,9 @@
 			children = (
 				AAD6644327C8FC25003AE2CD /* SwiftUI_Login_ScreenApp.swift */,
 				AAD6644527C8FC25003AE2CD /* ContentView.swift */,
+				AAD6647027CA3FFD003AE2CD /* LottieLoginView.swift */,
 				AAD6644727C8FC27003AE2CD /* Assets.xcassets */,
+				AAD6647527CA4CDC003AE2CD /* Lottie */,
 				AAD6644927C8FC27003AE2CD /* Preview Content */,
 			);
 			path = "SwiftUI-Login-Screen";
@@ -127,6 +135,14 @@
 			path = "SwiftUI-Login-ScreenUITests";
 			sourceTree = "<group>";
 		};
+		AAD6647527CA4CDC003AE2CD /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				AAD6647627CA4CDC003AE2CD /* 93385-login.json */,
+			);
+			path = Lottie;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +159,9 @@
 			dependencies = (
 			);
 			name = "SwiftUI-Login-Screen";
+			packageProductDependencies = (
+				AAD6646E27CA33B1003AE2CD /* Lottie */,
+			);
 			productName = "SwiftUI-Login-Screen";
 			productReference = AAD6644027C8FC25003AE2CD /* SwiftUI-Login-Screen.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +234,9 @@
 				Base,
 			);
 			mainGroup = AAD6643727C8FC25003AE2CD;
+			packageReferences = (
+				AAD6646D27CA33B1003AE2CD /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = AAD6644127C8FC25003AE2CD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,6 +253,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAD6647727CA4CDC003AE2CD /* 93385-login.json in Resources */,
 				AAD6644B27C8FC27003AE2CD /* Preview Assets.xcassets in Resources */,
 				AAD6644827C8FC27003AE2CD /* Assets.xcassets in Resources */,
 			);
@@ -258,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAD6644627C8FC25003AE2CD /* ContentView.swift in Sources */,
+				AAD6647127CA3FFD003AE2CD /* LottieLoginView.swift in Sources */,
 				AAD6644427C8FC25003AE2CD /* SwiftUI_Login_ScreenApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -579,6 +603,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AAD6646D27CA33B1003AE2CD /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AAD6646E27CA33B1003AE2CD /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AAD6646D27CA33B1003AE2CD /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AAD6643827C8FC25003AE2CD /* Project object */;
 }
