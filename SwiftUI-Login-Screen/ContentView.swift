@@ -32,13 +32,13 @@ struct ContentView: View {
                                    textColor: .gray,
                                    iconColor: .gray,
                                    iconName: "person.circle.fill",
-                                   isHidden: false)
+                                   isHiddenText: false)
 
                 CredentialTextView(text: $password,
                                    textColor: .gray,
                                    iconColor: .gray,
                                    iconName: "lock.circle.fill",
-                                   isHidden: true)
+                                   isHiddenText: true)
             }
             
             Spacer()

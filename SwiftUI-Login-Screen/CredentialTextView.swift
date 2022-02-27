@@ -13,8 +13,10 @@ struct CredentialTextView: View {
     let textColor: Color
     let iconColor: Color
     let iconName: String
-    let isHidden: Bool
-    
+    let isHiddenText: Bool
+
+    @State private var isSecured: Bool = true
+
     var body: some View {
         HStack {
             
@@ -27,16 +29,27 @@ struct CredentialTextView: View {
                 .padding(.leading, 12)
                 .padding(.trailing, 12)
 
-             VStack {
-                 if isHidden {
-                     SecureField("password", text: $text)
-                         .padding(.trailing, 16)
-                         .foregroundColor(textColor)
-                 } else {
-                     TextField("username", text: $text)
+            VStack {
+                if isHiddenText {
+                    ZStack(alignment: .trailing) {
+                        if isSecured {
+                            SecureField("text", text: $text)
+                        } else {
+                            TextField("text", text: $text)
+                        }
+                        Button(action: {
+                            isSecured.toggle()
+                        }) {
+                            Image(systemName: self.isSecured ? "eye.slash" : "eye")
+                                .accentColor(.gray)
+                                .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 47))
+                        }
+                    }
+                } else {
+                    TextField("username", text: $text)
                         .padding(.trailing, 16)
                         .foregroundColor(textColor)
-                 }
+                }
                         
                 Rectangle()
                     .frame(height: 1)
