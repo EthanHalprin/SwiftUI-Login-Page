@@ -9,15 +9,20 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-//        VStack(spacing: 10) {
-//
-//            Spacer()
-//
+        VStack() {
             LottieLoginView()
                 .frame(width: 180, height: 180)
             
-//            Spacer()
-//        }
+            Text("Login")
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .font(.system(size: 40,
+                              weight: .bold,
+                              design: Font.Design.rounded))
+                .foregroundColor(Color.blue)
+                .padding()
+
+            Spacer()
+        }
     }
 }
 
