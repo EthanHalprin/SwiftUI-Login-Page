@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA5B17B927CBE9C800157715 /* CredentialTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5B17B827CBE9C800157715 /* CredentialTextView.swift */; };
 		AAD6644427C8FC25003AE2CD /* SwiftUI_Login_ScreenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD6644327C8FC25003AE2CD /* SwiftUI_Login_ScreenApp.swift */; };
 		AAD6644627C8FC25003AE2CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD6644527C8FC25003AE2CD /* ContentView.swift */; };
 		AAD6644827C8FC27003AE2CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAD6644727C8FC27003AE2CD /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AA5B17B827CBE9C800157715 /* CredentialTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialTextView.swift; sourceTree = "<group>"; };
 		AAD6644027C8FC25003AE2CD /* SwiftUI-Login-Screen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Login-Screen.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAD6644327C8FC25003AE2CD /* SwiftUI_Login_ScreenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Login_ScreenApp.swift; sourceTree = "<group>"; };
 		AAD6644527C8FC25003AE2CD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				AAD6644327C8FC25003AE2CD /* SwiftUI_Login_ScreenApp.swift */,
 				AAD6644527C8FC25003AE2CD /* ContentView.swift */,
 				AAD6647027CA3FFD003AE2CD /* LottieLoginView.swift */,
+				AA5B17B827CBE9C800157715 /* CredentialTextView.swift */,
 				AAD6644727C8FC27003AE2CD /* Assets.xcassets */,
 				AAD6647527CA4CDC003AE2CD /* Lottie */,
 				AAD6644927C8FC27003AE2CD /* Preview Content */,
@@ -282,6 +285,7 @@
 			files = (
 				AAD6644627C8FC25003AE2CD /* ContentView.swift in Sources */,
 				AAD6647127CA3FFD003AE2CD /* LottieLoginView.swift in Sources */,
+				AA5B17B927CBE9C800157715 /* CredentialTextView.swift in Sources */,
 				AAD6644427C8FC25003AE2CD /* SwiftUI_Login_ScreenApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
