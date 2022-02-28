@@ -25,7 +25,8 @@ struct ContentView: View {
                               weight: .bold,
                               design: Font.Design.rounded))
                 .foregroundColor(Color.blue)
-                .padding(EdgeInsets.init(top: 20, leading: 16, bottom: 40, trailing: 20))
+                .padding(.bottom, 30)
+                .padding(.leading, 15)
 
             VStack(spacing: 25) {
                 CredentialTextView(text: $username,
@@ -40,6 +41,27 @@ struct ContentView: View {
                                    iconName: "lock.circle.fill",
                                    isHiddenText: true)
             }
+            .padding(.bottom, 50)
+            
+            Button(action:  {
+                print("Credentials Submitted")
+                print("---------------------")
+                print("Username: \(self.username)\nPassword: \(self.password)")
+            }) {
+                HStack {
+                    Text("Submit")
+                        .font(.title3)
+                        .fontWeight(.semibold)
+                }
+                .frame(width: 200, height: 25, alignment: .center)
+                .padding(10.0)
+                .background(.blue)
+                .foregroundColor(Color.white)
+                .clipShape(Capsule())
+            }
+
+            
+            
             
             Spacer()
         }

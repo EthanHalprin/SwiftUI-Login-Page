@@ -19,10 +19,10 @@ struct LottieLoginView: UIViewRepresentable {
 
         let animationView = AnimationView()
         let animation = Animation.named("93385-login")
-        guard let _ = animation else {
+        guard let anime = animation else {
             fatalError("Could not find Lottie json file")
         }
-        animationView.animation = animation!
+        animationView.animation = anime
         animationView.contentMode = .scaleAspectFit
         animationView.play()
         animationView.translatesAutoresizingMaskIntoConstraints = false
