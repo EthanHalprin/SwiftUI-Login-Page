@@ -46,14 +46,14 @@ struct ContentView: View {
                 VStack(spacing: 25) {
                     CredentialTextView(text: $username,
                                        textColor: .gray,
-                                       iconColor: .gray,
+                                       iconColor: .blue,
                                        iconName: "person.circle.fill",
                                        isHiddenText: false)
                         .focused($textFieldIsFocused)
 
                     CredentialTextView(text: $password,
                                        textColor: .gray,
-                                       iconColor: .gray,
+                                       iconColor: .blue,
                                        iconName: "lock.circle.fill",
                                        isHiddenText: true)
                         .focused($textFieldIsFocused)

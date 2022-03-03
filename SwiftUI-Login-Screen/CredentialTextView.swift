@@ -10,18 +10,19 @@ import SwiftUI
 struct CredentialTextView: View {
     
     @Binding var text: String
+    @State private var isEyeSlashed: Bool = true
     let textColor: Color
     let iconColor: Color
     let iconName: String
     let isHiddenText: Bool
-
-    @State private var isSecured: Bool = true
+    
 
     var body: some View {
+        
         HStack {
             
             Image(systemName: iconName)
-                .renderingMode(.original)
+                .renderingMode(.template)
                 .resizable()
                 .foregroundColor(iconColor)
                 .aspectRatio(contentMode: .fit)
@@ -32,16 +33,16 @@ struct CredentialTextView: View {
             VStack {
                 if isHiddenText {
                     ZStack(alignment: .trailing) {
-                        if isSecured {
+                        if isEyeSlashed {
                             SecureField("text", text: $text)
                         } else {
                             TextField("text", text: $text)
                         }
                         Button(action: {
-                            isSecured.toggle()
+                            self.isEyeSlashed.toggle()
                         }) {
-                            Image(systemName: self.isSecured ? "eye.slash" : "eye")
-                                .accentColor(.gray)
+                            Image(systemName: self.isEyeSlashed ? "eye.slash" : "eye")
+                                .accentColor(.blue)
                                 .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 47))
                         }
                     }
