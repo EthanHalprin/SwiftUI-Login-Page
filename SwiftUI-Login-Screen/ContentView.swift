@@ -7,11 +7,6 @@
 
 import SwiftUI
 
-extension Color {
-    static let lightSkyBlue = Color(red: 135.0/255.0, green: 206.0/255.0, blue: 250.0/255.0)
-    static let aliceBlue    = Color(red: 240.0/255.0, green: 248.0/255.0, blue: 255.0/255.0)
-}
-
 struct ContentView: View {
     
     @State private var username: String = "username"
@@ -21,12 +16,12 @@ struct ContentView: View {
     var body: some View {
         
         ZStack {
-            LinearGradient(gradient: Gradient(colors: [Color.lightSkyBlue, Color.white]), startPoint: .topLeading, endPoint: .bottomTrailing)
+            LinearGradient(gradient: Gradient(colors: [Color.white]),
+                           startPoint: .topLeading,
+                           endPoint: .bottomTrailing)
                 .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
                 .ignoresSafeArea()
-                .onTapGesture {
-                    textFieldIsFocused = false
-                }
+                .onTapGesture { textFieldIsFocused = false }
 
             VStack() {
                 
@@ -58,8 +53,19 @@ struct ContentView: View {
                                        isHiddenText: true)
                         .focused($textFieldIsFocused)
                 }
-                .padding(.bottom, 50)
-                
+
+                Button(action: {
+                }) {
+                Text("Forgot?")
+                    .font(.system(size  : 13,
+                                  weight: .medium,
+                                  design: Font.Design.rounded))
+                    .foregroundColor(.blue)
+                    .padding()
+                }
+                .frame(width: 100, height: 25, alignment: .leading)
+                .padding(EdgeInsets(top: 0, leading: 0, bottom: 30, trailing: 190))
+                                
                 Button(action:  {
                     print("Credentials Submitted")
                     print("---------------------")
@@ -78,8 +84,37 @@ struct ContentView: View {
                     .clipShape(Capsule())
                 }
                 
+                Text("Or, login with...")
+                    .fontWeight(Font.Weight.thin)
+                    .padding()
+                
+                HStack(spacing: 20) {
+                    LogoButtonView(imageName: "applelogo", isSystem: true)
+                    // https://icon-library.com/icon/google-login-icon-24.html
+                    LogoButtonView(imageName: "google-login-icon-24", isSystem: false)
+                    // https://www.vectorico.com/facebook-logo/
+                    LogoButtonView(imageName: "Facebook-Logo", isSystem: false)
+                }
+                
                 Spacer()
 
+                HStack {
+                    Text("New to our app?")
+                        .font(.system(size  : 15,
+                                      weight: .thin,
+                                      design: Font.Design.rounded))
+                    Button(action: {
+                    }) {
+                    Text("Register")
+                        .font(.system(size  : 15,
+                                      weight: .regular,
+                                      design: Font.Design.rounded))
+                        .foregroundColor(.blue)
+                        .padding()
+                    }
+                }
+                
+                Spacer()
             }
         }
     }
