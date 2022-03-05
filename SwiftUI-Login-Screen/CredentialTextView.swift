@@ -35,10 +35,10 @@ struct CredentialTextView: View {
                     ZStack(alignment: .trailing) {
                         if isEyeSlashed {
                             SecureField("text", text: $text)
-                                .foregroundColor(Color(UIColor.systemGray3))
+                                .foregroundColor(Color("textColor"))
                         } else {
                             TextField("text", text: $text)
-                                .foregroundColor(Color(UIColor.systemGray3))
+                                .foregroundColor(Color("textColor"))
                         }
                         Button(action: {
                             self.isEyeSlashed.toggle()
@@ -70,7 +70,7 @@ struct CredentialTextView_Previews: PreviewProvider {
 
     static var previews: some View {
         CredentialTextView(text: $someText,
-                           textColor: Color(UIColor.systemGray3),
+                           textColor: Color("textColor"),
                            iconColor: Color(UIColor.systemBlue),
                            iconName: "person.circle.fill",
                            isHiddenText: false)

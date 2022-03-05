@@ -17,10 +17,9 @@ struct ContentView: View {
         
         ZStack {
             
-            LinearGradient(gradient: Gradient(colors: [Color.white]),
+            LinearGradient(gradient: Gradient(colors: [Color.cyan, Color.white]),
                            startPoint: .topLeading,
                            endPoint: .bottomTrailing)
-                .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
                 .ignoresSafeArea()
                 .onTapGesture { textFieldIsFocused = false }
             
@@ -41,14 +40,14 @@ struct ContentView: View {
 
                 VStack(spacing: 25) {
                     CredentialTextView(text: $username,
-                                       textColor: Color(UIColor.systemGray3),
+                                       textColor: Color("textColor"),
                                        iconColor: Color(UIColor.systemBlue),
                                        iconName: "person.circle.fill",
                                        isHiddenText: false)
                         .focused($textFieldIsFocused)
 
                     CredentialTextView(text: $password,
-                                       textColor: Color(UIColor.systemGray3),
+                                       textColor: Color("textColor"),
                                        iconColor: Color(UIColor.systemBlue),
                                        iconName: "lock.circle.fill",
                                        isHiddenText: true)
@@ -89,8 +88,4 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
-}
-
-extension App {
-    
 }

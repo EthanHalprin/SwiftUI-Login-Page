@@ -11,7 +11,7 @@ struct RegistrationTrigger: View {
     var body: some View {
         HStack {
             Text("New to our app?")
-                .foregroundColor(Color(UIColor.systemGray3))
+                .foregroundColor(Color("textColor"))
                 .font(.system(size  : 15,
                               weight: .thin,
                               design: Font.Design.rounded))

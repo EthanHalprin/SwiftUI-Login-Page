@@ -16,7 +16,7 @@ struct LoginOptionsPanel: View {
             .font(.system(size  : 15,
                           weight: .medium,
                           design: Font.Design.rounded))
-            .foregroundColor(Color(UIColor.systemGray3))
+            .foregroundColor(Color("textColor"))
             .padding()
         
         HStack(spacing: 20) {
