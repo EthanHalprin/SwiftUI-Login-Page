@@ -20,7 +20,6 @@ struct LoginOptionsPanel: View {
             .padding()
         
         HStack(spacing: 20) {
-            //https://icones.pro/wp-content/uploads/2021/04/icone-apple-symbole-logo-bleu.png
             Button(action: {
             }) {
                 Image("apple-bleu")
@@ -30,7 +29,6 @@ struct LoginOptionsPanel: View {
                     .padding()
             }
 
-            // https://icon-library.com/icon/google-login-icon-24.html
             Button(action: {
             }) {
                 Image("google-login-icon-24")
@@ -40,7 +38,6 @@ struct LoginOptionsPanel: View {
                     .padding()
             }
             
-            // https://www.vectorico.com/facebook-logo/
             Button(action: {
             }) {
                 Image("Facebook-Logo")
