@@ -11,6 +11,8 @@ struct LogoButtonView: View {
     
     var imageName: String
     var isSystem: Bool
+    let edgeSize: CGFloat = 30.0
+    let cornerRadius: CGFloat = 10.0
     
     var body: some View {
         Button(action: {
@@ -18,17 +20,17 @@ struct LogoButtonView: View {
             if isSystem {
                 Image(systemName: imageName)
                     .resizable()
-                    .frame(width: 30, height: 30, alignment: .center)
-                    .accentColor(.blue)
+                    .frame(width: edgeSize, height: edgeSize, alignment: .center)
+                    .accentColor(Color(UIColor.systemBlue))
                     .padding()
-                    .cornerRadius(8.0)
+                    .cornerRadius(cornerRadius)
             } else {
                 Image(imageName)
                     .resizable()
-                    .frame(width: 30, height: 30, alignment: .center)
-                    .accentColor(.blue)
+                    .frame(width: edgeSize, height: edgeSize, alignment: .center)
+                    .accentColor(Color(UIColor.systemBlue))
                     .padding()
-                    .cornerRadius(8.0)
+                    .cornerRadius(cornerRadius)
             }
         }
     }

@@ -35,21 +35,21 @@ struct ContentView: View {
                     .font(.system(size  : 45,
                                   weight: .bold,
                                   design: Font.Design.rounded))
-                    .foregroundColor(Color.blue)
+                    .foregroundColor(Color(UIColor.systemBlue))
                     .padding(.bottom, 30)
                     .padding(.leading, 15)
 
                 VStack(spacing: 25) {
                     CredentialTextView(text: $username,
-                                       textColor: .gray,
-                                       iconColor: .blue,
+                                       textColor: Color(UIColor.systemGray3),
+                                       iconColor: Color(UIColor.systemBlue),
                                        iconName: "person.circle.fill",
                                        isHiddenText: false)
                         .focused($textFieldIsFocused)
 
                     CredentialTextView(text: $password,
-                                       textColor: .gray,
-                                       iconColor: .blue,
+                                       textColor: Color(UIColor.systemGray3),
+                                       iconColor: Color(UIColor.systemBlue),
                                        iconName: "lock.circle.fill",
                                        isHiddenText: true)
                         .focused($textFieldIsFocused)
@@ -66,9 +66,9 @@ struct ContentView: View {
                             .font(.title3)
                             .fontWeight(.semibold)
                     }
-                    .frame(width: 190, height: 20, alignment: .center)
+                    .frame(width: 200, height: 25, alignment: .center)
                     .padding(10.0)
-                    .background(.blue)
+                    .background(Color(UIColor.systemBlue))
                     .foregroundColor(Color.white)
                     .clipShape(Capsule())
                 }
@@ -89,4 +89,8 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
+}
+
+extension App {
+    
 }

@@ -15,7 +15,7 @@ struct ForgotPasswordButton: View {
             .font(.system(size  : 13,
                           weight: .medium,
                           design: Font.Design.rounded))
-            .foregroundColor(.blue)
+            .foregroundColor(Color(UIColor.systemBlue))
             .padding()
         }
         .frame(width: 100, height: 25, alignment: .leading)

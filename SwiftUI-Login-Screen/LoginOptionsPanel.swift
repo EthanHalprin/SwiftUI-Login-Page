@@ -10,9 +10,10 @@ import SwiftUI
 struct LoginOptionsPanel: View {
     var body: some View {
         Text("Or, login with...")
-            .font(.system(size  : 13,
+            .font(.system(size  : 15,
                           weight: .medium,
                           design: Font.Design.rounded))
+            .foregroundColor(Color(UIColor.systemGray3))
             .padding()
         
         HStack(spacing: 20) {

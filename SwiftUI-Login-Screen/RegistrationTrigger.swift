@@ -11,16 +11,17 @@ struct RegistrationTrigger: View {
     var body: some View {
         HStack {
             Text("New to our app?")
-                .font(.system(size  : 13,
+                .foregroundColor(Color(UIColor.systemGray3))
+                .font(.system(size  : 15,
                               weight: .thin,
                               design: Font.Design.rounded))
             Button(action: {
             }) {
             Text("Register")
-                .font(.system(size  : 13,
+                .font(.system(size  : 15,
                               weight: .regular,
                               design: Font.Design.rounded))
-                .foregroundColor(.blue)
+                .foregroundColor(Color(UIColor.systemBlue))
                 .padding()
             }
         }
