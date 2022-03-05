@@ -10,6 +10,7 @@
 		AA5173A827D363B2008D24B3 /* LoginOptionsPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5173A727D363B2008D24B3 /* LoginOptionsPanel.swift */; };
 		AA5173AA27D363DF008D24B3 /* RegistrationTrigger.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5173A927D363DF008D24B3 /* RegistrationTrigger.swift */; };
 		AA5173AC27D36408008D24B3 /* ForgotPasswordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5173AB27D36408008D24B3 /* ForgotPasswordButton.swift */; };
+		AA5173AE27D396DA008D24B3 /* ScreenShotiPhone13Pro.png in Resources */ = {isa = PBXBuildFile; fileRef = AA5173AD27D396DA008D24B3 /* ScreenShotiPhone13Pro.png */; };
 		AA5B17B927CBE9C800157715 /* CredentialTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5B17B827CBE9C800157715 /* CredentialTextView.swift */; };
 		AAD6644427C8FC25003AE2CD /* SwiftUI_Login_ScreenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD6644327C8FC25003AE2CD /* SwiftUI_Login_ScreenApp.swift */; };
 		AAD6644627C8FC25003AE2CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD6644527C8FC25003AE2CD /* ContentView.swift */; };
@@ -44,6 +45,7 @@
 		AA5173A727D363B2008D24B3 /* LoginOptionsPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOptionsPanel.swift; sourceTree = "<group>"; };
 		AA5173A927D363DF008D24B3 /* RegistrationTrigger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationTrigger.swift; sourceTree = "<group>"; };
 		AA5173AB27D36408008D24B3 /* ForgotPasswordButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordButton.swift; sourceTree = "<group>"; };
+		AA5173AD27D396DA008D24B3 /* ScreenShotiPhone13Pro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ScreenShotiPhone13Pro.png; sourceTree = "<group>"; };
 		AA5B17B827CBE9C800157715 /* CredentialTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialTextView.swift; sourceTree = "<group>"; };
 		AAD6644027C8FC25003AE2CD /* SwiftUI-Login-Screen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Login-Screen.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAD6644327C8FC25003AE2CD /* SwiftUI_Login_ScreenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Login_ScreenApp.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				AA5173AB27D36408008D24B3 /* ForgotPasswordButton.swift */,
 				AA5173A727D363B2008D24B3 /* LoginOptionsPanel.swift */,
 				AA5173A927D363DF008D24B3 /* RegistrationTrigger.swift */,
+				AA5173AD27D396DA008D24B3 /* ScreenShotiPhone13Pro.png */,
 				AAD6644727C8FC27003AE2CD /* Assets.xcassets */,
 				AAD6647527CA4CDC003AE2CD /* Lottie */,
 				AAD6644927C8FC27003AE2CD /* Preview Content */,
@@ -267,6 +270,7 @@
 			files = (
 				AAD6647727CA4CDC003AE2CD /* 93385-login.json in Resources */,
 				AAD6644B27C8FC27003AE2CD /* Preview Assets.xcassets in Resources */,
+				AA5173AE27D396DA008D24B3 /* ScreenShotiPhone13Pro.png in Resources */,
 				AAD6644827C8FC27003AE2CD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
