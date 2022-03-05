@@ -5,7 +5,7 @@ Login page example with Lottie animation + boxes for username &amp; password + s
 MIT
 
 ## Sample
-![Login](/ScreenShotiPhone13Pro.png)
+![Login](/SwiftUI-Login-Page/ScreenShotiPhone13Pro.png)
 
 ### Pics/Animation Credits
 
