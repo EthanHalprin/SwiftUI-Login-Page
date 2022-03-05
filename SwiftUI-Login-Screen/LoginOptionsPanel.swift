@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct LoginOptionsPanel: View {
+    
+    let edgeSize: CGFloat = 50.0
+
     var body: some View {
         Text("Or, login with...")
             .font(.system(size  : 15,
@@ -17,11 +20,36 @@ struct LoginOptionsPanel: View {
             .padding()
         
         HStack(spacing: 20) {
-            LogoButtonView(imageName: "applelogo", isSystem: true)
+            //https://icones.pro/wp-content/uploads/2021/04/icone-apple-symbole-logo-bleu.png
+            Button(action: {
+            }) {
+                Image("apple-bleu")
+                    .resizable()
+                    .frame(width: edgeSize, height: edgeSize, alignment: .center)
+                    .accentColor(Color(UIColor.systemBlue))
+                    .padding()
+            }
+
             // https://icon-library.com/icon/google-login-icon-24.html
-            LogoButtonView(imageName: "google-login-icon-24", isSystem: false)
+            Button(action: {
+            }) {
+                Image("google-login-icon-24")
+                    .resizable()
+                    .frame(width: edgeSize, height: edgeSize, alignment: .center)
+                    .accentColor(Color(UIColor.systemBlue))
+                    .padding()
+            }
+            
             // https://www.vectorico.com/facebook-logo/
-            LogoButtonView(imageName: "Facebook-Logo", isSystem: false)
+            Button(action: {
+            }) {
+                Image("Facebook-Logo")
+                    .resizable()
+                    .frame(width: edgeSize, height: edgeSize, alignment: .center)
+                    .accentColor(Color(UIColor.systemBlue))
+                    .padding()
+            }
+
         }
     }
 }

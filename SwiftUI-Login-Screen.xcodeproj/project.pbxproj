@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AA34F41527D151B100AD1A4D /* LogoButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA34F41427D151B100AD1A4D /* LogoButtonView.swift */; };
 		AA5173A827D363B2008D24B3 /* LoginOptionsPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5173A727D363B2008D24B3 /* LoginOptionsPanel.swift */; };
 		AA5173AA27D363DF008D24B3 /* RegistrationTrigger.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5173A927D363DF008D24B3 /* RegistrationTrigger.swift */; };
 		AA5173AC27D36408008D24B3 /* ForgotPasswordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5173AB27D36408008D24B3 /* ForgotPasswordButton.swift */; };
@@ -42,7 +41,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AA34F41427D151B100AD1A4D /* LogoButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoButtonView.swift; sourceTree = "<group>"; };
 		AA5173A727D363B2008D24B3 /* LoginOptionsPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOptionsPanel.swift; sourceTree = "<group>"; };
 		AA5173A927D363DF008D24B3 /* RegistrationTrigger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationTrigger.swift; sourceTree = "<group>"; };
 		AA5173AB27D36408008D24B3 /* ForgotPasswordButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordButton.swift; sourceTree = "<group>"; };
@@ -114,7 +112,6 @@
 				AAD6644527C8FC25003AE2CD /* ContentView.swift */,
 				AAD6647027CA3FFD003AE2CD /* LottieLoginView.swift */,
 				AA5B17B827CBE9C800157715 /* CredentialTextView.swift */,
-				AA34F41427D151B100AD1A4D /* LogoButtonView.swift */,
 				AA5173AB27D36408008D24B3 /* ForgotPasswordButton.swift */,
 				AA5173A727D363B2008D24B3 /* LoginOptionsPanel.swift */,
 				AA5173A927D363DF008D24B3 /* RegistrationTrigger.swift */,
@@ -298,7 +295,6 @@
 				AAD6644627C8FC25003AE2CD /* ContentView.swift in Sources */,
 				AAD6647127CA3FFD003AE2CD /* LottieLoginView.swift in Sources */,
 				AA5173AA27D363DF008D24B3 /* RegistrationTrigger.swift in Sources */,
-				AA34F41527D151B100AD1A4D /* LogoButtonView.swift in Sources */,
 				AA5B17B927CBE9C800157715 /* CredentialTextView.swift in Sources */,
 				AA5173AC27D36408008D24B3 /* ForgotPasswordButton.swift in Sources */,
 				AAD6644427C8FC25003AE2CD /* SwiftUI_Login_ScreenApp.swift in Sources */,

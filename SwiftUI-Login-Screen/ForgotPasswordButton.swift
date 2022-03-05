@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ForgotPasswordButton: View {
+    
+    let width: CGFloat = 100.0
+    
     var body: some View {
         Button(action: {
         }) {
@@ -18,8 +21,8 @@ struct ForgotPasswordButton: View {
             .foregroundColor(Color(UIColor.systemBlue))
             .padding()
         }
-        .frame(width: 100, height: 25, alignment: .leading)
-        .padding(EdgeInsets(top: 0, leading: 0, bottom: 30, trailing: 190))
+        .frame(width: width, height: 25, alignment: .leading)
+        .padding(EdgeInsets(top: 0, leading: 0, bottom: 30, trailing: UIScreen.main.bounds.width - width*1.95))
     }
 }
 
