@@ -1,11 +1,11 @@
 # SwiftUI-Login-Page
-Login page example with Lottie animation + boxes for username &amp; password + some action buttons
+Designed Login page example in SwiftUI
 
 ## License
 MIT
 
 ## Sample
-![Login](/SwiftUI-Login-Page/ScreenShotiPhone13Pro.png)
+![Screenshot](/SwiftUI-Login-Screen/ScreenShotiPhone13Pro.png)
 
 ### Pics/Animation Credits
 
