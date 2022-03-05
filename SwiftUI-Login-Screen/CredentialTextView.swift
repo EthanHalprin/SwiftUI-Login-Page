@@ -60,3 +60,17 @@ struct CredentialTextView: View {
         }
     }
 }
+
+
+struct CredentialTextView_Previews: PreviewProvider {
+    
+    @State static private var someText: String = "abcdefg"
+
+    static var previews: some View {
+        CredentialTextView(text: $someText,
+                           textColor: .gray,
+                           iconColor: .blue,
+                           iconName: "person.circle.fill",
+                           isHiddenText: false)
+    }
+}

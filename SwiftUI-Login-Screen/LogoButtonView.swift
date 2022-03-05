@@ -33,3 +33,9 @@ struct LogoButtonView: View {
         }
     }
 }
+
+struct LogoButtonView_Previews: PreviewProvider {
+    static var previews: some View {
+        LogoButtonView(imageName: "applelogo", isSystem: true)
+    }
+}

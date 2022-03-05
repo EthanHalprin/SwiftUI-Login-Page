@@ -16,13 +16,14 @@ struct ContentView: View {
     var body: some View {
         
         ZStack {
+            
             LinearGradient(gradient: Gradient(colors: [Color.white]),
                            startPoint: .topLeading,
                            endPoint: .bottomTrailing)
                 .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
                 .ignoresSafeArea()
                 .onTapGesture { textFieldIsFocused = false }
-
+            
             VStack() {
                 
                 LottieLoginView()
@@ -53,23 +54,11 @@ struct ContentView: View {
                                        isHiddenText: true)
                         .focused($textFieldIsFocused)
                 }
-
-                Button(action: {
-                }) {
-                Text("Forgot?")
-                    .font(.system(size  : 13,
-                                  weight: .medium,
-                                  design: Font.Design.rounded))
-                    .foregroundColor(.blue)
-                    .padding()
-                }
-                .frame(width: 100, height: 25, alignment: .leading)
-                .padding(EdgeInsets(top: 0, leading: 0, bottom: 30, trailing: 190))
+                
+                ForgotPasswordButton()
                                 
                 Button(action:  {
-                    print("Credentials Submitted")
-                    print("---------------------")
-                    print("Username: \(self.username)\nPassword: \(self.password)")
+                    print("\n\nCredentials Submitted\n---------------------\nUsername: \(self.username)\nPassword: \(self.password)\n\n")
                     textFieldIsFocused = false
                 }) {
                     HStack {
@@ -77,42 +66,18 @@ struct ContentView: View {
                             .font(.title3)
                             .fontWeight(.semibold)
                     }
-                    .frame(width: 200, height: 25, alignment: .center)
+                    .frame(width: 190, height: 20, alignment: .center)
                     .padding(10.0)
                     .background(.blue)
                     .foregroundColor(Color.white)
                     .clipShape(Capsule())
                 }
                 
-                Text("Or, login with...")
-                    .fontWeight(Font.Weight.thin)
-                    .padding()
-                
-                HStack(spacing: 20) {
-                    LogoButtonView(imageName: "applelogo", isSystem: true)
-                    // https://icon-library.com/icon/google-login-icon-24.html
-                    LogoButtonView(imageName: "google-login-icon-24", isSystem: false)
-                    // https://www.vectorico.com/facebook-logo/
-                    LogoButtonView(imageName: "Facebook-Logo", isSystem: false)
-                }
+                LoginOptionsPanel()
                 
                 Spacer()
 
-                HStack {
-                    Text("New to our app?")
-                        .font(.system(size  : 15,
-                                      weight: .thin,
-                                      design: Font.Design.rounded))
-                    Button(action: {
-                    }) {
-                    Text("Register")
-                        .font(.system(size  : 15,
-                                      weight: .regular,
-                                      design: Font.Design.rounded))
-                        .foregroundColor(.blue)
-                        .padding()
-                    }
-                }
+                RegistrationTrigger()
                 
                 Spacer()
             }
