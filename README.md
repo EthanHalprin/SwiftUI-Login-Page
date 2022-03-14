@@ -1,5 +1,5 @@
 # SwiftUI-Login-Page
-Designed Login page example in SwiftUI
+A well-designed login page in SwiftUI
 
 ## License
 MIT
